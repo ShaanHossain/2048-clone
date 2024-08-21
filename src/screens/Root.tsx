@@ -1,24 +1,15 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import React from 'react';
+import Animation from '@screens/Animation';
 
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
-    paddingTop: 200,
-    paddingHorizontal: 16,
-    alignSelf: 'center',
-  },
-  goalsContainer: {
-    flex: 5,
   },
 });
 
 function Root() {
-  return (
-    <View style={styles.appContainer}>
-      <Text>Hello World!</Text>
-    </View>
-  );
+  return <Animation />;
 }
 
 export default Root;
